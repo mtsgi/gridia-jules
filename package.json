@@ -1,0 +1,29 @@
+{
+  "name": "gridia",
+  "version": "1.0.0",
+  "description": "A bookmark management app using SolidJS and IndexedDB",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npx vite",
+    "build": "npx vite build",
+    "serve": "npx vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "solidjs",
+    "indexeddb",
+    "bookmarks"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "idb": "^8.0.3",
+    "solid-js": "^1.9.9"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "vite": "^7.1.2",
+    "vite-plugin-solid": "^2.11.8"
+  }
+}

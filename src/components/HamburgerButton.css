@@ -1,0 +1,45 @@
+.hamburger-button {
+  display: none; /* Hidden by default, shown on mobile via media query */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 110; /* Must be above the sidebar overlay */
+}
+
+.hamburger-button:focus {
+  outline: none;
+}
+
+.hamburger-button div {
+  width: 2rem;
+  height: 0.25rem;
+  background: #2d3748;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  transform-origin: 1px;
+}
+
+.hamburger-button.open .bar1 {
+  transform: rotate(45deg);
+}
+
+.hamburger-button.open .bar2 {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.hamburger-button.open .bar3 {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .hamburger-button {
+    display: flex;
+  }
+}

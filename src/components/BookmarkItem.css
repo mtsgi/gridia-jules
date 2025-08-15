@@ -1,0 +1,95 @@
+.bookmark-item {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bookmark-item:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.bookmark-item-content {
+  padding: 1rem 1.5rem;
+}
+
+.bookmark-item-main-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bookmark-item h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.125rem;
+  color: #2d3748;
+}
+
+.bookmark-item-url {
+  color: #718096;
+  text-decoration: none;
+  font-size: 0.875rem;
+  margin: 0 0 0.75rem 0;
+  word-break: break-all;
+}
+
+.bookmark-item-description {
+  margin: 0;
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+.bookmark-item-actions {
+  padding: 0.75rem 1.5rem;
+  border-top: 1px solid #edf2f7;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.action-button {
+  border: 1px solid transparent;
+  border-radius: 0.375rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.edit-button {
+  background-color: #ebf8ff;
+  color: #3182ce;
+}
+
+.edit-button:hover {
+  background-color: #bee3f8;
+  color: #2c5282;
+}
+
+.favorite-button {
+  background-color: transparent;
+  color: #cbd5e0;
+  font-size: 1.25rem;
+  padding: 0.2rem 0.6rem;
+}
+
+.favorite-button:hover {
+  color: #f6e05e;
+}
+
+.favorite-button.favorited {
+  color: #f6e05e;
+}
+
+.delete-button {
+  background-color: #fed7d7;
+  color: #c53030;
+}
+
+.delete-button:hover {
+  background-color: #fbb6b6;
+  color: #9b2c2c;
+}
