@@ -1,6 +1,7 @@
 import type { Component } from 'solid-js';
 import { For } from 'solid-js';
 import { categories, activeFilter, setActiveFilter } from '../store';
+import CategoryForm from './CategoryForm';
 import './Sidebar.css';
 
 interface SidebarProps {
@@ -54,6 +55,7 @@ const Sidebar: Component<SidebarProps> = (props) => {
             )}
           </For>
         </ul>
+        <CategoryForm />
       </nav>
     </aside>
   );
