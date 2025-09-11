@@ -2,6 +2,7 @@ import { createSignal, createResource } from 'solid-js';
 import {
   getAllBookmarks,
   getAllCategories,
+  addCategory as dbAddCategory,
   addBookmark as dbAddBookmark,
   deleteBookmark as dbDeleteBookmark,
   updateBookmark as dbUpdateBookmark,
@@ -60,6 +61,15 @@ export async function deleteBookmark(id: number) {
 export async function updateBookmark(bookmark: Bookmark) {
   await dbUpdateBookmark(bookmark);
   refetchBookmarks();
+}
+
+/**
+ * Adds a new category to the database and refetches the list.
+ * @param name - The name of the category to add.
+ */
+export async function addCategory(name: string) {
+  await dbAddCategory(name);
+  refetchCategories();
 }
 
 /**
